@@ -2,5 +2,7 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
-define('BOT_NAME', 'ExampleBot');
-define('BOT_TOKEN', 'bot123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11');
+$BOT_NAME = getenv('BOT_NAME');
+$BOT_TOKEN = getenv('BOT_TOKEN');
+define('BOT_NAME', $BOT_NAME);
+define('BOT_TOKEN', $BOT_TOKEN);
